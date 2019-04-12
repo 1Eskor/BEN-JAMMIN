@@ -1,0 +1,42 @@
+class testing {
+  createTable() {
+    const sql = `
+      CREATE TABLE [IF NOT EXISTS] [schema_name].Classes (
+  Id data_type INTEGER,
+    code data_type TEXT,
+  Name data_type TEXT,
+  Teacher Id data_type INTEGER,
+  startDate data_type TEXT,
+  endDate data_type TEXT,`;
+    return this.sqlite.run(sql);
+  }
+
+  createTable() {
+    const sql = `
+      CREATE TABLE[IF NOT EXISTS][schema_name].Students(
+    Id data_type INTEGER,
+    Firstname data_type TEXT,
+    Lastname data_type TEXT,
+    `;
+
+    return this.sqlite.run(sql);
+  }
+
+  createTable() {
+    const sql = `CREATE TABLE[IF NOT EXISTS][schema_name].Teachers(
+    Id data_type INTEGER,
+    Firstname data_type TEXT,
+    Lastname data_type TEXT,
+    `;
+
+    return this.sqlite.run(sql);
+  }
+
+  createTable() {
+    const sql = `CREATE TABLE[IF NOT EXISTS][schema_name].Student_Classes(
+    class_id data_type INTEGER,
+    student_id data_type INTEGER,
+    `;
+    return this.sqlite.run(sql);
+  }
+}
